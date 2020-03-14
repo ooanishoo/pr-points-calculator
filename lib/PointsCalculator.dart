@@ -117,6 +117,23 @@ class _PointsCalculatorState extends State<PointsCalculator> {
           modalType: SmartSelectModalType.bottomSheet,
           trailing: Text(australianSkillEmployment),
         ),
+        ListTile(
+            title: Text(
+          'Australian study requirement',
+          style: TextStyle(fontWeight: FontWeight.w700),
+        )),
+        SmartSelect<String>.single(
+          title: 'Meet Australian study requirement?',
+          value: studyInAustralia,
+          options: options.studyInAustralia,
+          isTwoLine: true,
+          onChange: (val) {
+            setState(() => studyInAustralia = val);
+            calculatePoints();
+          },
+          modalType: SmartSelectModalType.bottomSheet,
+          trailing: Text(studyInAustralia),
+        ),
         SmartSelect<String>.single(
           title: 'Educational qualifications',
           value: educationalQualification,
@@ -128,23 +145,6 @@ class _PointsCalculatorState extends State<PointsCalculator> {
           },
           modalType: SmartSelectModalType.bottomSheet,
           trailing: Text(educationalQualification),
-        ),
-        ListTile(
-            title: Text(
-          'Australian study requirement',
-          style: TextStyle(fontWeight: FontWeight.w700),
-        )),
-        SmartSelect<String>.single(
-          title: 'Degree, diploma or trade qualification in Australia ?',
-          value: studyInAustralia,
-          options: options.studyInAustralia,
-          isTwoLine: true,
-          onChange: (val) {
-            setState(() => studyInAustralia = val);
-            calculatePoints();
-          },
-          modalType: SmartSelectModalType.bottomSheet,
-          trailing: Text(studyInAustralia),
         ),
         SmartSelect<String>.single(
           title: 'Specialist education qualification ?',
@@ -158,6 +158,11 @@ class _PointsCalculatorState extends State<PointsCalculator> {
           modalType: SmartSelectModalType.bottomSheet,
           trailing: Text(specialistEducationQualification),
         ),
+        ListTile(
+            title: Text(
+          'Others',
+          style: TextStyle(fontWeight: FontWeight.w700),
+        )),
         SmartSelect<String>.single(
           title: 'Have you done NAATI ?',
           value: ccl,
