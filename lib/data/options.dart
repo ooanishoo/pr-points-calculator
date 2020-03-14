@@ -35,7 +35,7 @@ List<SmartSelectOption<String>> overseasSkillEmployment = [
 ];
 
 List<SmartSelectOption<String>> australianSkillEmployment = [
-  SmartSelectOption<String>(value: '10', title: 'Less than 1 year'),
+  SmartSelectOption<String>(value: '0', title: 'Less than 1 year'),
   SmartSelectOption<String>(
       value: '5', title: 'At least 1 but less than 3 years'),
   SmartSelectOption<String>(
