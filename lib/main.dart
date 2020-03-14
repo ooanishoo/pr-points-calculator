@@ -1,3 +1,4 @@
+import 'package:animated_splash/animated_splash.dart';
 import 'package:flutter/material.dart';
 import 'package:pr_points_calculator/HomePage.dart';
 import 'package:pr_points_calculator/custom_theme.dart';
@@ -10,7 +11,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       theme: CustomTheme(context),
-      home: HomePage()
+      //home: HomePage()
+      home: AnimatedSplash(
+        imagePath: 'assets/images/logo.png',
+        home: HomePage(),
+        duration: 2500,
+        type: AnimatedSplashType.StaticDuration,
+      ),
     );
   }
 }
