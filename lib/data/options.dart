@@ -20,9 +20,9 @@ List<SmartSelectOption<String>> age = [
 ];
 
 List<SmartSelectOption<String>> language = [
-  SmartSelectOption<String>(value: '20', title: 'Competent English'),
+  SmartSelectOption<String>(value: '0', title: 'Competent English'),
   SmartSelectOption<String>(value: '10', title: 'Proficient English'),
-  SmartSelectOption<String>(value: '0', title: 'Superior English'),
+  SmartSelectOption<String>(value: '20', title: 'Superior English'),
 ];
 
 List<SmartSelectOption<String>> overseasSkillEmployment = [
