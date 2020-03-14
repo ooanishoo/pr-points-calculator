@@ -13,20 +13,23 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    void _changePoints(int value) => setState(() => points = value);
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Points Calculator'),
         centerTitle: false,
         actions: <Widget>[
-          // Text(
-          //   'Total points: ' +
-          //   points.toString(),
-          //   style: TextStyle(color: Colors.black),
-          // )
-          Icon(Icons.shopping_cart)
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 20, 16, 16),
+            child: Text(
+              'Total points : ' + points.toString(),
+              style: TextStyle(fontWeight: FontWeight.w600),
+            ),
+          ),
         ],
       ),
-      body: PointsCalculator(),
+      body: PointsCalculator(updatePoints: _changePoints),
     );
   }
 }
