@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: CustomTheme(context),
       //home: HomePage()
       home: AnimatedSplash(
-        imagePath: 'assets/images/logo.png',
+        imagePath: 'assets/images/points.png',
         home: HomePage(),
         duration: 2500,
         type: AnimatedSplashType.StaticDuration,
