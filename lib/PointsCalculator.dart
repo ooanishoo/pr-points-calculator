@@ -54,6 +54,7 @@ class _PointsCalculatorState extends State<PointsCalculator> {
       children: <Widget>[
         SmartSelect<String>.single(
           title: 'Visa subclass',
+          placeholder: 'Select one',
           value: subclass,
           options: options.visaSubclass,
           isTwoLine: false,
@@ -66,6 +67,7 @@ class _PointsCalculatorState extends State<PointsCalculator> {
         ),
         SmartSelect<String>.single(
           title: 'Age',
+          placeholder: 'Select one',
           value: age,
           options: options.age,
           isTwoLine: true,
@@ -78,6 +80,7 @@ class _PointsCalculatorState extends State<PointsCalculator> {
         ),
         SmartSelect<String>.single(
           title: 'English Language',
+          placeholder: 'Select one',
           value: language,
           options: options.language,
           isTwoLine: true,
@@ -95,6 +98,7 @@ class _PointsCalculatorState extends State<PointsCalculator> {
         )),
         SmartSelect<String>.single(
           title: 'Overseas skilled employment',
+          placeholder: 'Select one',
           value: overseasSkillEmployment,
           options: options.overseasSkillEmployment,
           isTwoLine: true,
@@ -107,6 +111,7 @@ class _PointsCalculatorState extends State<PointsCalculator> {
         ),
         SmartSelect<String>.single(
           title: 'Australian skilled employment',
+          placeholder: 'Select one',
           value: australianSkillEmployment,
           options: options.australianSkillEmployment,
           isTwoLine: true,
@@ -124,6 +129,7 @@ class _PointsCalculatorState extends State<PointsCalculator> {
         )),
         SmartSelect<String>.single(
           title: 'Meet Australian study requirement?',
+          placeholder: 'Select one',
           value: studyInAustralia,
           options: options.studyInAustralia,
           isTwoLine: true,
@@ -136,6 +142,7 @@ class _PointsCalculatorState extends State<PointsCalculator> {
         ),
         SmartSelect<String>.single(
           title: 'Educational qualifications',
+          placeholder: 'Select one',
           value: educationalQualification,
           options: options.educationalQualification,
           isTwoLine: true,
@@ -148,6 +155,7 @@ class _PointsCalculatorState extends State<PointsCalculator> {
         ),
         SmartSelect<String>.single(
           title: 'Specialist education qualification ?',
+          placeholder: 'Select one',
           value: specialistEducationQualification,
           options: options.specialistEducationQualification,
           isTwoLine: true,
@@ -165,6 +173,7 @@ class _PointsCalculatorState extends State<PointsCalculator> {
         )),
         SmartSelect<String>.single(
           title: 'Have you done NAATI ?',
+          placeholder: 'Select one',
           value: ccl,
           options: options.ccl,
           isTwoLine: true,
@@ -177,6 +186,7 @@ class _PointsCalculatorState extends State<PointsCalculator> {
         ),
         SmartSelect<String>.single(
           title: 'Study in regional Australia ?',
+          placeholder: 'Select one',
           value: studyRegional,
           options: options.studyRegional,
           isTwoLine: true,
@@ -189,6 +199,7 @@ class _PointsCalculatorState extends State<PointsCalculator> {
         ),
         SmartSelect<String>.single(
           title: 'Partner Skill ?',
+          placeholder: 'Select one',
           value: partnerSkills,
           options: options.partnerSkills,
           isTwoLine: true,
