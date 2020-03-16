@@ -23,6 +23,7 @@ dependencies:
   smart_select: ^3.0.3
   animated_splash: ^1.0.0
   flutter_launcher_icons: ^0.7.4
+  line_awesome_icons: ^1.0.4+2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -33,7 +34,7 @@ dev_dependencies:
     sdk: flutter
 
 flutter_icons:
-  image_path: 'assets/images/icon.png'
+  image_path: "assets/images/icon.png"
   android: true
   ios: true
 
@@ -49,6 +50,10 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
+  fonts:
+  - family: Monoton     
+    fonts:
+    - asset: assets/monoton.ttf
   #  - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
