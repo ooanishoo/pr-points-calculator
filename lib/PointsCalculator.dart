@@ -54,10 +54,10 @@ class _PointsCalculatorState extends State<PointsCalculator> {
       children: <Widget>[
         SmartSelect<String>.single(
           title: 'Visa subclass',
-          placeholder: 'Select one',
+          placeholder: 'Select the visa you are applying for',
           value: subclass,
           options: options.visaSubclass,
-          isTwoLine: false,
+          isTwoLine: true,
           onChange: (val) {
             setState(() => subclass = val);
             calculatePoints();
