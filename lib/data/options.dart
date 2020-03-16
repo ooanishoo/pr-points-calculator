@@ -1,29 +1,35 @@
 import 'package:smart_select/smart_select.dart';
 
 List<SmartSelectOption<String>> visaSubclass = [
-  SmartSelectOption<String>(value: '188', title: 'Subclass 188'),
-  SmartSelectOption<String>(value: '189', title: 'Subclass 189'),
-  SmartSelectOption<String>(value: '190', title: 'Subclass 190'),
-  SmartSelectOption<String>(value: '489', title: 'Subclass 489'),
-  SmartSelectOption<String>(value: '491', title: 'Subclass 491'),
+  SmartSelectOption<String>(value: '188', title: 'Subclass 188', subtitle: 'Business Innovation and Investment (Provisional)'),
+  SmartSelectOption<String>(value: '189', title: 'Subclass 189', subtitle: 'Skilled Independent'),
+  SmartSelectOption<String>(value: '190', title: 'Subclass 190', subtitle: 'Skilled Nominated'),
+  SmartSelectOption<String>(value: '489', title: 'Subclass 489', subtitle: 'Skilled Regional (Provisional)'),
+  SmartSelectOption<String>(value: '491', title: 'Subclass 491', subtitle: 'Skilled Work Regional (Provisional)'),
 ];
 
 List<SmartSelectOption<String>> age = [
   SmartSelectOption<String>(
-      value: '25', title: 'at least 18 but less than 25 years'),
+      value: '25', title:'18-25', subtitle: 'at least 18 but less than 25 years'),
   SmartSelectOption<String>(
-      value: '30', title: 'at least 25 but less than 33 years'),
+      value: '30', title:'25-30', subtitle: 'at least 25 but less than 33 years'),
   SmartSelectOption<String>(
-      value: '25', title: 'at least 33 but less than 40 years'),
+      value: '25', title:'33-40', subtitle: 'at least 33 but less than 40 years'),
   SmartSelectOption<String>(
-      value: '15', title: 'at least 40 but less than 45 years'),
+      value: '15', title:'40-45', subtitle: 'at least 40 but less than 45 years'),
 ];
 
+
 List<SmartSelectOption<String>> language = [
-  SmartSelectOption<String>(value: '0', title: 'Competent English'),
-  SmartSelectOption<String>(value: '10', title: 'Proficient English'),
-  SmartSelectOption<String>(value: '20', title: 'Superior English'),
+  SmartSelectOption<String>(value: '0', title: 'Competent English', subtitle: 'Hint: PTE score needs to be 79 in each section'),
+  SmartSelectOption<String>(value: '10', title: 'Proficient English', subtitle: 'Hint: PTE score needs to be 65–79 in each section'),
+  SmartSelectOption<String>(value: '20', title: 'Superior English', subtitle: 'Hint: PTE score needs to be 50-65 in each section'),
 ];
+
+ 
+ 
+ 
+
 
 List<SmartSelectOption<String>> overseasSkillEmployment = [
   SmartSelectOption<String>(value: '0', title: 'Less than 3 years'),
