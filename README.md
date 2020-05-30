@@ -1,4 +1,4 @@
-# pr_points_calculator
+# pr_points_calculator 🐨
 
 A minimalistic flutter app that calculates your PR eligible points in Australia 🇦🇺 
 
